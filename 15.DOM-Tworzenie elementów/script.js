@@ -116,7 +116,7 @@ zad9_more.onclick = () => zad9_form();
 body.append(zad9_more);
 var zad9_create = create('button', 'Utwórz');
 zad9_create.onclick = () => {
-    zadanie10(); // funkcja z zad10
+    zadanie10();
     let elements = document.querySelectorAll('#ex9 > div');
     Object.keys(elements).forEach((el) => {
         let tr = create('tr');
@@ -170,7 +170,7 @@ function zadanie12(str) {
     return obj;
 }
 zadanie12('Ala była bardzo zmęczona').searchAla();
-zadanie12('Tomek olał zajęcia').searchAla();
+zadanie12('Rodzynki w serniku').searchAla();
 
 // zadanie 13
 function zadanie13_a(strings) {
@@ -199,7 +199,7 @@ function zad14() {
     var orig = Object.assign({}, zadanie14);
     zadanie14.name = 'Jan';
     zadanie14.surname = 'Kowalski';
-    zadanie14.age = 21;
+    zadanie14.age = 26;
     Object.keys(zadanie14).forEach((key) => {
         zadanie14[key + '_length'] = zadanie14[key].length;
         if (zadanie14[key + '_length'] > 5) {
